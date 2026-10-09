@@ -28,38 +28,38 @@
       background-repeat: no-repeat;
     }
     header {
-      padding: clamp(28px, 6vh, 64px) 24px 20px;
+      padding: clamp(24px, 5vh, 48px) 20px 0;
     }
     .logo {
       display: block;
-      width: clamp(160px, 23vw, 270px);
+      width: clamp(280px, 42vw, 420px);
       max-width: 100%;
       height: auto;
       margin: 0 auto;
       filter: drop-shadow(0 4px 20px rgba(0, 0, 0, .22));
     }
     main {
-      flex: 1;
+      flex: 0 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: clamp(44px, 9vh, 100px) 24px;
+      padding: 28px 24px 48px;
     }
     .intro { width: 100%; max-width: 900px; }
     h1 {
       margin: 0 auto;
-      max-width: 850px;
-      font-size: clamp(2rem, 4.8vw, 4rem);
-      font-weight: 600;
-      line-height: 1.14;
-      letter-spacing: -.035em;
+      max-width: 580px;
+      font-size: clamp(1.25rem, 2.5vw, 2rem);
+      font-weight: 400;
+      line-height: 1.45;
+      letter-spacing: .005em;
       text-wrap: balance;
       text-shadow: 0 2px 24px rgba(0, 0, 0, .65);
     }
     .slogan {
-      margin: 24px 0 0;
+      margin: 18px 0 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+      font-size: clamp(1.1rem, 2.2vw, 1.6rem);
       font-style: italic;
       line-height: 1.5;
       text-wrap: balance;
@@ -70,16 +70,16 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 14px;
-      margin-top: 40px;
+      margin-top: 28px;
     }
     .store {
       display: flex;
       align-items: center;
       gap: 14px;
-      width: 224px;
+      width: 208px;
       max-width: 100%;
-      min-height: 76px;
-      padding: 16px 20px;
+      min-height: 64px;
+      padding: 12px 18px;
       border: 1px solid rgba(255, 255, 255, .45);
       border-radius: 14px;
       background: rgba(20, 13, 29, .88);
@@ -94,6 +94,7 @@
     .store small { display: block; font-size: .75rem; line-height: 1.5; }
     .store strong { display: block; font-size: 1.15rem; line-height: 1.4; }
     footer {
+      margin-top: auto;
       padding: 24px 24px max(24px, env(safe-area-inset-bottom));
       font-size: .8rem;
       line-height: 1.6;
@@ -120,10 +121,12 @@
     .legal a { color: #e1dbe8; cursor: default; }
     .legal-note { margin: 12px 0 0; color: #c9c0d3; font-size: .75rem; }
     @media (max-width: 480px) {
-      header { padding-top: 28px; }
-      main { padding: 40px 20px; }
-      h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
-      .stores { flex-direction: column; align-items: center; margin-top: 30px; }
+      header { padding: 24px 16px 0; }
+      .logo { width: min(84vw, 340px); }
+      main { padding: 22px 24px 36px; }
+      h1 { max-width: 340px; font-size: 1.25rem; line-height: 1.45; }
+      .slogan { margin-top: 18px; font-size: 1.1rem; }
+      .stores { flex-direction: column; align-items: center; gap: 12px; margin-top: 26px; }
       .legal { gap: 10px 18px; }
     }
   </style>
