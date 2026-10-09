@@ -1,166 +1,185 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CAPSOA - Voyagez dans le temps</title>
-    <meta name="description" content="CAPSOA, l'application française de capsule temporelle numérique. Aujourd'hui ne s'oubliera jamais.">
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background: #080808;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        main {
-            width: 100%;
-            max-width: 850px;
-            flex: 1;
-        }
-
-        .logo {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 35px auto 0;
-        }
-
-        .content {
-            padding: 15px 20px 40px;
-        }
-
-        h1 {
-            font-size: clamp(18px, 3vw, 25px);
-            font-weight: 400;
-            line-height: 1.5;
-            margin: 20px 0;
-        }
-
-        .slogan {
-            font-size: 17px;
-            color: #cccccc;
-            margin-bottom: 35px;
-        }
-
-        .stores {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        .store {
-            background: #171717;
-            border: 1px solid #555;
-            border-radius: 12px;
-            padding: 16px 25px;
-            min-width: 190px;
-            font-size: 17px;
-        }
-
-        .soon {
-            display: block;
-            margin-top: 8px;
-            font-size: 12px;
-            color: #c77cff;
-        }
-
-        footer {
-            padding: 25px 15px;
-            font-size: 13px;
-            color: #aaaaaa;
-        }
-
-        footer a {
-            color: #dddddd;
-            text-decoration: none;
-        }
-
-        @media (max-width: 600px) {
-            .logo {
-                margin-top: 25px;
-            }
-
-            .content {
-                padding-top: 5px;
-            }
-
-            .stores {
-                gap: 12px;
-            }
-
-            .store {
-                min-width: 145px;
-                padding: 14px 12px;
-                font-size: 15px;
-            }
-
-            .slogan {
-                font-size: 15px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211331">
+  <meta name="description" content="CAPSOA, l'application française de capsule temporelle numérique. Aujourd'hui ne s'oubliera jamais. Bientôt disponible sur App Store et Google Play.">
+  <title>CAPSOA — Voyagez dans le temps</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: #211331; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      /* Les deux images doivent se trouver à côté de ce fichier index.html. */
+      background-color: #211331;
+      background-image:
+        linear-gradient(180deg, rgba(22, 12, 37, .38), rgba(22, 12, 37, .58) 55%, rgba(15, 9, 26, .94)),
+        url("./fond-tour-eiffel.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    header {
+      padding: clamp(28px, 6vh, 64px) 24px 20px;
+    }
+    .logo {
+      display: block;
+      width: clamp(160px, 23vw, 270px);
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      filter: drop-shadow(0 4px 20px rgba(0, 0, 0, .22));
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(44px, 9vh, 100px) 24px;
+    }
+    .intro { width: 100%; max-width: 900px; }
+    h1 {
+      margin: 0 auto;
+      max-width: 850px;
+      font-size: clamp(2rem, 4.8vw, 4rem);
+      font-weight: 600;
+      line-height: 1.14;
+      letter-spacing: -.035em;
+      text-wrap: balance;
+      text-shadow: 0 2px 24px rgba(0, 0, 0, .65);
+    }
+    .slogan {
+      margin: 24px 0 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+      font-style: italic;
+      line-height: 1.5;
+      text-wrap: balance;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, .8);
+    }
+    .stores {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 40px;
+    }
+    .store {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 224px;
+      max-width: 100%;
+      min-height: 76px;
+      padding: 16px 20px;
+      border: 1px solid rgba(255, 255, 255, .45);
+      border-radius: 14px;
+      background: rgba(20, 13, 29, .88);
+      color: #fff;
+      font: inherit;
+      text-align: left;
+      opacity: 1;
+      cursor: default;
+      -webkit-text-fill-color: #fff;
+    }
+    .store svg { width: 26px; height: 30px; flex-shrink: 0; }
+    .store small { display: block; font-size: .75rem; line-height: 1.5; }
+    .store strong { display: block; font-size: 1.15rem; line-height: 1.4; }
+    footer {
+      padding: 24px 24px max(24px, env(safe-area-inset-bottom));
+      font-size: .8rem;
+      line-height: 1.6;
+    }
+    .contact {
+      display: inline-block;
+      padding: 8px;
+      color: #fff;
+      font-size: .95rem;
+      text-underline-offset: 5px;
+    }
+    .contact:hover { text-decoration-thickness: 2px; }
+    .contact:focus-visible { outline: 2px solid #fff; outline-offset: 5px; border-radius: 4px; }
+    .copyright { margin: 10px 0 16px; color: #e1dbe8; }
+    .legal {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .legal a { color: #e1dbe8; cursor: default; }
+    .legal-note { margin: 12px 0 0; color: #c9c0d3; font-size: .75rem; }
+    @media (max-width: 480px) {
+      header { padding-top: 28px; }
+      main { padding: 40px 20px; }
+      h1 { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+      .stores { flex-direction: column; align-items: center; margin-top: 30px; }
+      .legal { gap: 10px 18px; }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <img class="logo" src="./logo-capsoa.png" alt="CAPSOA" fetchpriority="high">
+  </header>
 
-    <main>
+  <main>
+    <section class="intro" aria-labelledby="titre">
+      <h1 id="titre">L'application française de capsule temporelle numérique</h1>
+      <p class="slogan">Aujourd'hui ne s'oubliera jamais.</p>
 
-        <img
-            class="logo"
-            src="FOND%20CAPSOA.png"
-            alt="CAPSOA - Voyagez dans le temps"
-        >
+      <!-- Boutons volontairement désactivés : aucune URL de boutique inventée. -->
+      <div class="stores" role="group" aria-label="Disponibilité de l'application">
+        <button class="store" type="button" disabled>
+          <svg viewBox="0 0 24 28" fill="none" aria-hidden="true" focusable="false">
+            <rect x="5" y="1" width="14" height="26" rx="3" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M10 4h4M10 24h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span><small>Bientôt disponible</small><strong>App Store</strong></span>
+        </button>
+        <button class="store" type="button" disabled>
+          <svg viewBox="0 0 24 28" fill="none" aria-hidden="true" focusable="false">
+            <path d="M4 3 21 14 4 25V3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          </svg>
+          <span><small>Bientôt disponible</small><strong>Google Play</strong></span>
+        </button>
+      </div>
+    </section>
+  </main>
 
-        <div class="content">
-
-            <h1>
-                L'application française de<br>
-                capsule temporelle numérique
-            </h1>
-
-            <p class="slogan">
-                Aujourd'hui ne s'oubliera jamais.
-            </p>
-
-            <div class="stores">
-
-                <div class="store">
-                    🍎 App Store
-                    <span class="soon">Bientôt disponible</span>
-                </div>
-
-                <div class="store">
-                    ▶ Google Play
-                    <span class="soon">Bientôt disponible</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </main>
-
-    <footer>
-        Contact :
-        <a href="mailto:contact@capsoa.fr">
-            contact@capsoa.fr
-        </a>
-        <br><br>
-        © 2026 CAPSOA
-    </footer>
-
+  <footer>
+    <a class="contact" href="mailto:contact@capsoa.fr">contact@capsoa.fr</a>
+    <p class="copyright">©2026 CAPSOA</p>
+    <nav aria-label="Informations juridiques" aria-describedby="legal-note">
+      <!--
+        Ces pages restent à créer. Les liens sont désactivés, sans href.
+        Une fois chaque page créée, remplacer role="link" aria-disabled="true"
+        par le href correspondant :
+        CGU : href="./cgu.html"
+        CGV : href="./cgv.html"
+        Mineurs : href="./conditions-mineurs.html"
+        Mentions légales : href="./mentions-legales.html"
+        Confidentialité : href="./politique-confidentialite.html"
+      -->
+      <ul class="legal">
+        <li><a role="link" aria-disabled="true">CGU</a></li>
+        <li><a role="link" aria-disabled="true">CGV</a></li>
+        <li><a role="link" aria-disabled="true">Conditions applicables aux mineurs</a></li>
+        <li><a role="link" aria-disabled="true">Mentions légales</a></li>
+        <li><a role="link" aria-disabled="true">Politique de confidentialité</a></li>
+      </ul>
+    </nav>
+    <p class="legal-note" id="legal-note">Pages juridiques à venir — liens temporairement désactivés.</p>
+  </footer>
 </body>
 </html>
