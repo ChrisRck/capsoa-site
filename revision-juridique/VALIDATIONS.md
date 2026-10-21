@@ -15,3 +15,7 @@ La rédaction concerne uniquement « l’application CAPSOA », sans mention de 
 21 octobre 2026 : article 6 des CGU validé explicitement et sauvegardé dans la rédaction approuvée. Articles 1 à 6 validés ; articles 7 et suivants à revoir. Aucune publication.
 
 21 octobre 2026 : article 7 des CGU validé explicitement et sauvegardé dans la rédaction approuvée. Articles 1 à 7 validés ; article 8 et suivants à revoir. Aucune publication.
+
+21 octobre 2026 : article 8 des CGU laissé en attente à la demande du propriétaire ; à compléter avant lancement après adhésion à un médiateur.
+
+21 octobre 2026 : article 1 des CGV validé explicitement et sauvegardé dans la rédaction approuvée. Articles suivants à revoir. Aucune publication.
