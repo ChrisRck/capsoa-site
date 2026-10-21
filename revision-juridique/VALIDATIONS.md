@@ -37,3 +37,5 @@ La rédaction concerne uniquement « l’application CAPSOA », sans mention de 
 21 octobre 2026 : correction de l’article 8 demandée par le propriétaire : un seul SMS prévu par tentative ; formulation au singulier. Aucune publication.
 
 21 octobre 2026 : remplacement de la phrase relative aux relances dans l’article 8 par la formulation exacte demandée par le propriétaire : « Les emails de relance ainsi que le SMS sont envoyés selon le parcours d’invitation et les règles de relance applicables. Leur envoi n’est pas systématique lorsque le destinataire a déjà répondu. » Aucun changement de facturation ni publication.
+
+21 octobre 2026 : article 8 des CGV validé explicitement par le propriétaire dans son intégralité, après relecture de la dernière version comprenant la formulation « Les emails de relance ainsi que le SMS ». Texte inchangé lors de cette validation. Articles 1 à 8 des CGV validés ; article 9 et suivants à revoir. Aucune publication.
