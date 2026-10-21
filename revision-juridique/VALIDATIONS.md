@@ -7,3 +7,5 @@ La rédaction concerne uniquement « l’application CAPSOA », sans mention de 
 21 octobre 2026 : article 2 des CGU validé explicitement et sauvegardé dans la rédaction approuvée. Articles 1 et 2 validés ; articles 3 et suivants à revoir. Aucune publication.
 
 21 octobre 2026 : article 3 des CGU validé explicitement, avec le dernier paragraphe précisant l’examen des signalements et les conditions des mesures de protection ou de sanction. Rédaction approuvée sauvegardée. Articles 1 à 3 validés ; articles 4 et suivants à revoir. Aucune publication.
+
+21 octobre 2026 : article 4 des CGU validé explicitement et sauvegardé dans la rédaction approuvée. Délai retenu : sept jours à compter de l’envoi de l’invitation initiale, sans remise à zéro par les relances. Articles 1 à 4 validés ; articles 5 et suivants à revoir. À harmoniser lors de la révision des CGV : remplacer leur ancien délai de quinze jours par sept jours. Aucune publication.
