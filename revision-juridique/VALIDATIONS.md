@@ -19,3 +19,5 @@ La rédaction concerne uniquement « l’application CAPSOA », sans mention de 
 21 octobre 2026 : article 8 des CGU laissé en attente à la demande du propriétaire ; à compléter avant lancement après adhésion à un médiateur.
 
 21 octobre 2026 : article 1 des CGV validé explicitement et sauvegardé dans la rédaction approuvée. Articles suivants à revoir. Aucune publication.
+
+21 octobre 2026 : article 2 des CGV validé, durées et nombres de destinataires confirmés par le propriétaire, avec la précision proposée sur le caractère envisagé de l’offre Héritage et ses caractéristiques définitives à préciser lors de sa commercialisation. Articles 1 et 2 des CGV validés ; suivants à revoir. Aucune publication.
