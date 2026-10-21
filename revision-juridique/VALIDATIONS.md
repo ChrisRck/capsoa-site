@@ -13,3 +13,5 @@ La rédaction concerne uniquement « l’application CAPSOA », sans mention de 
 21 octobre 2026 : article 5 des CGU validé explicitement et sauvegardé dans la rédaction approuvée. Articles 1 à 5 validés ; articles 6 et suivants à revoir. Vérifier les engagements relatifs aux prestataires, à la sécurité, aux durées de conservation et aux transferts lors de la révision de la Politique de confidentialité. Aucune publication.
 
 21 octobre 2026 : article 6 des CGU validé explicitement et sauvegardé dans la rédaction approuvée. Articles 1 à 6 validés ; articles 7 et suivants à revoir. Aucune publication.
+
+21 octobre 2026 : article 7 des CGU validé explicitement et sauvegardé dans la rédaction approuvée. Articles 1 à 7 validés ; article 8 et suivants à revoir. Aucune publication.
