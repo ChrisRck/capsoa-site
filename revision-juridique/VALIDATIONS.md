@@ -33,3 +33,5 @@ La rédaction concerne uniquement « l’application CAPSOA », sans mention de 
 21 octobre 2026 : article 7 des CGV validé et sauvegardé dans la rédaction approuvée, achats intégrés App Store/Google Play et commandes à zéro. Articles 1 à 7 des CGV validés ; suivants à revoir. Suivi article 5/article 8 et conservation après non-aboutissement toujours en attente. Aucune publication.
 
 21 octobre 2026 : à la demande explicite du propriétaire, intégration des règles discutées dans l’article 8 et harmonisation des articles 2 et 5 : avoir renouvelable de même formule, sept jours, deux tentatives sans réponse, remise à zéro par Caps retour, anonymat préservé, deuxième SMS à 0,59 € si le numéro est conservé, y compris avec e-mail ; choix e-mail seul sans supplément. Rédaction intégrée sur autorisation, à relire dans son ensemble avant publication. Droits légaux et conditions des stores conservés. Articles 9 et suivants à revoir ; conservation après non-aboutissement toujours à vérifier. Aucun déploiement.
+
+21 octobre 2026 : correction de l’article 8 demandée par le propriétaire : un seul SMS prévu par tentative ; formulation au singulier. Aucune publication.
