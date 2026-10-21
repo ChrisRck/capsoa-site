@@ -21,3 +21,5 @@ La rédaction concerne uniquement « l’application CAPSOA », sans mention de 
 21 octobre 2026 : article 1 des CGV validé explicitement et sauvegardé dans la rédaction approuvée. Articles suivants à revoir. Aucune publication.
 
 21 octobre 2026 : article 2 des CGV validé, durées et nombres de destinataires confirmés par le propriétaire, avec la précision proposée sur le caractère envisagé de l’offre Héritage et ses caractéristiques définitives à préciser lors de sa commercialisation. Articles 1 et 2 des CGV validés ; suivants à revoir. Aucune publication.
+
+21 octobre 2026 : article 3 des CGV validé avec le paragraphe sur la case obligatoire avant commande et la suppression volontaire pendant les 24 heures ou le voyage. Réserve des droits légaux et des conditions App Store/Google Play conservée. À vérifier avant lancement : confirmation contractuelle sur support durable fournie par les stores et complément éventuel CAPSOA. À harmoniser dans une intervention sur l’application : texte de la case relatif au remboursement. Code de l’application inchangé. Articles 1 à 3 des CGV validés ; suivants à revoir. Aucune publication.
