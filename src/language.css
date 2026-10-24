@@ -1,0 +1,5 @@
+.language-switcher {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 12px;padding:14px 12px;margin:0 auto;max-width:100%;color:#eee;font:14px/1.5 Arial,sans-serif;}
+.language-switcher a {display:inline-block;color:#fff;text-decoration:none;padding:6px 10px;border:1px solid #777;border-radius:20px;background:#17121de8;}
+.language-switcher a[aria-current="page"] {border-color:#edcb88;color:#edcb88;}
+.language-switcher a:hover,.language-switcher a:focus-visible {outline:2px solid #edcb88;outline-offset:3px;}
+@media print {.language-switcher {display:none;}}

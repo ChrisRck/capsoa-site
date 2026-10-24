@@ -1,0 +1,4 @@
+public/
+.firebase/
+*-debug.log
+__pycache__/
