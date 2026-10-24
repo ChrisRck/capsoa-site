@@ -2,3 +2,5 @@ public/
 .firebase/
 *-debug.log
 __pycache__/
+
+public-waiting/

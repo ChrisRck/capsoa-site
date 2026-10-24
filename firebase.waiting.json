@@ -1,0 +1,1 @@
+{"hosting":{"site":"capsoa-vitrine","public":"public-waiting","ignore":["firebase*.json","**/.*","**/node_modules/**"],"headers":[{"source":"**/*.html","headers":[{"key":"Cache-Control","value":"public,max-age=0,must-revalidate"}]}]}}
