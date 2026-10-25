@@ -16,7 +16,7 @@ def build_waiting():
  (out/'assets').mkdir(exist_ok=True)
  for name in ['logo-capsoa.png','fond-tour-eiffel.png']:shutil.copyfile(backup/name,out/'assets'/name)
  for name in ['language.js','language.css']:shutil.copyfile(ROOT/'src'/name,out/'assets'/name)
- shutil.copyfile(ROOT/'src/assets/logo-capsoa-international-officiel.png',out/'assets/logo-capsoa-international-officiel.png')
+ shutil.copyfile(ROOT/'src/assets/logo-capsoa-international.png',out/'assets/logo-capsoa-international.png')
  original=(backup/'index.html').read_text()
  for lang in LANGS:
   title,soon,availability=WORDS[lang]
@@ -24,13 +24,15 @@ def build_waiting():
   descriptions={'fr':'Capsoa — L’application arrive bientôt sur App Store et Google Play.','en':'CAPSOA — The app is coming soon to the App Store and Google Play.','es':'CAPSOA — La aplicación llegará pronto a App Store y Google Play.','pt':'CAPSOA — A aplicação estará disponível em breve na App Store e no Google Play.'}
   import re
   page=re.sub(r'<meta name="description" content="[^"]*">',f'<meta name="description" content="{descriptions[lang]}">',page)
-  page=page.replace('./fond-tour-eiffel.png','/assets/fond-tour-eiffel.png').replace('./logo-capsoa.png','/assets/'+('logo-capsoa.png' if lang=='fr' else 'logo-capsoa-international-officiel.png'))
-  if lang!='fr':page=page.replace('alt="CAPSOA"', 'alt="CAPSOA — Capture Today, Surprise Tomorrow"')
+  page=page.replace('./fond-tour-eiffel.png','/assets/fond-tour-eiffel.png').replace('./logo-capsoa.png','/assets/'+('logo-capsoa.png' if lang=='fr' else 'logo-capsoa-international.png'))
+  if lang!='fr':
+   page=page.replace('<header>', '<header class="international-brand">')
+   page=page.replace('</header>', '<div class="brand-glint" aria-hidden="true"></div><p class="brand-tagline">Capture Today, Surprise Tomorrow</p></header>')
   nav=f'<nav class="language-switcher language-flags" aria-label="{LABELS[lang][0]}">'
   flags={'fr':'🇫🇷','en':'🇬🇧','es':'🇪🇸','pt':'🇵🇹'}
   nav+=''.join(f'<a href="/{l}/" lang="{l}" hreflang="{l}" data-language="{l}"'+(' aria-current="page"' if l==lang else '')+f' aria-label="{label}" title="{label}"><span aria-hidden="true">{flags[l]}</span></a>' for l,label in LANGS.items())+'</nav>'
   page=page.replace('<body>','<body>'+nav)
-  page=page.replace('</head>','<link rel="stylesheet" href="/assets/language.css?v=20261025"><script defer src="/assets/language.js"></script></head>')
+  page=page.replace('</head>','<link rel="stylesheet" href="/assets/language.css?v=20261025-transparent"><script defer src="/assets/language.js"></script></head>')
   (out/lang).mkdir(exist_ok=True);(out/lang/'index.html').write_text(page)
  (out/'index.html').write_text((out/'fr/index.html').read_text())
  # No translated legal document may accidentally be included in this deployment.

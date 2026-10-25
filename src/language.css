@@ -8,3 +8,8 @@
 .language-switcher.language-flags {width:fit-content;max-width:calc(100% - 32px);margin:18px auto 0;padding:6px 8px;gap:6px;border:1px solid #8c8175;border-radius:16px;background:#17121de8;}
 .language-flags a {display:flex;align-items:center;justify-content:center;min-width:48px;min-height:44px;padding:4px 8px;border:1px solid transparent;border-radius:10px;background:transparent;font-family:Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif;font-size:28px;line-height:1;}
 .language-flags a[aria-current="page"] {border-color:#edcb88;background:#edcb881c;}
+
+.international-brand .logo {width:clamp(280px,42vw,420px);max-width:100%;filter:none;}
+.brand-glint {width:min(220px,45vw);height:1px;margin:18px auto 12px;background:linear-gradient(90deg,transparent,#66247c 35%,#c27437 50%,#66247c 65%,transparent);}
+.brand-tagline {margin:0;color:#e2ded6;font-family:"Century Gothic","Avenir Next",Avenir,Arial,sans-serif;font-weight:300;font-size:clamp(15px,2.1vw,22px);font-style:normal;letter-spacing:.025em;line-height:1.5;}
+@media(max-width:480px){.international-brand .logo{width:min(84vw,340px)}.brand-tagline{font-size:clamp(13px,4vw,18px)}}
