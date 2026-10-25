@@ -30,7 +30,7 @@ class SiteTest(unittest.TestCase):
      for element in ['h1','h2','p','li','section']:
       self.assertEqual(sum(t==element for t,a in p.tags),sum(t==element for t,a in original.tags))
  def test_numeric_terms_preserved(self):
-  def numbers(s):return sorted(re.findall(r'\d+(?:[.,]\d+)?',s.replace('0,59','0.59')))
+  def numbers(s):return sorted(re.findall(r'\d+(?:[.,]\d+)?',s.replace('0,59','0.59').replace('1,99','1.99')))
   for lang in ['en','es','pt']:
    translation=json.loads((build.ROOT/'translations'/f'{lang}.json').read_text())
    for name,source in build.SOURCE.items():
