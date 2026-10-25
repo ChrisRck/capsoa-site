@@ -3,3 +3,8 @@
 .language-switcher a[aria-current="page"] {border-color:#edcb88;color:#edcb88;}
 .language-switcher a:hover,.language-switcher a:focus-visible {outline:2px solid #edcb88;outline-offset:3px;}
 @media print {.language-switcher {display:none;}}
+
+/* Compact flag selector for the waiting page. */
+.language-switcher.language-flags {width:fit-content;max-width:calc(100% - 32px);margin:18px auto 0;padding:6px 8px;gap:6px;border:1px solid #8c8175;border-radius:16px;background:#17121de8;}
+.language-flags a {display:flex;align-items:center;justify-content:center;min-width:48px;min-height:44px;padding:4px 8px;border:1px solid transparent;border-radius:10px;background:transparent;font-family:Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif;font-size:28px;line-height:1;}
+.language-flags a[aria-current="page"] {border-color:#edcb88;background:#edcb881c;}
