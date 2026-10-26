@@ -33,6 +33,17 @@ def build_waiting():
   nav+=''.join(f'<a href="/{l}/" lang="{l}" hreflang="{l}" data-language="{l}"'+(' aria-current="page"' if l==lang else '')+f' aria-label="{label}" title="{label}"><span aria-hidden="true">{flags[l]}</span></a>' for l,label in LANGS.items())+'</nav>'
   page=page.replace('<body>','<body>'+nav)
   page=page.replace('</head>','<link rel="stylesheet" href="/assets/language.css?v=20261025-transparent"><script defer src="/assets/language.js"></script></head>')
+  instagram_labels = {'fr': 'Suivez CAPSOA sur Instagram', 'en': 'Follow CAPSOA on Instagram', 'es': 'Sigue a CAPSOA en Instagram', 'pt': 'Siga a CAPSOA no Instagram'}
+  social_css = """<style>
+    .instagram-link { display:inline-flex; align-items:center; justify-content:center; gap:10px; max-width:100%; margin-top:22px; padding:12px 16px; min-height:48px; color:#fff; background:rgba(20,13,29,.88); border:1px solid rgba(255,255,255,.45); border-radius:14px; font-size:1rem; line-height:1.5; text-decoration:underline; text-underline-offset:4px; }
+    .instagram-link svg { width:28px; height:28px; flex-shrink:0; }
+    .instagram-link:hover { background:rgba(65,30,80,.95); border-color:#e5a6ed; }
+    .instagram-link:focus-visible { outline:3px solid #fff; outline-offset:4px; }
+  </style>"""
+  social_link = f'''<a class="instagram-link" href="https://www.instagram.com/capsoa.fr/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false"><defs><radialGradient id="instagram-colors" cx="28%" cy="100%" r="125%"><stop offset="0" stop-color="#ffdc80"/><stop offset=".24" stop-color="#fcaf45"/><stop offset=".45" stop-color="#f77737"/><stop offset=".62" stop-color="#e1306c"/><stop offset=".8" stop-color="#c13584"/><stop offset="1" stop-color="#5851db"/></radialGradient></defs><rect width="32" height="32" rx="8" fill="url(#instagram-colors)"/><rect x="7" y="7" width="18" height="18" rx="5.5" stroke="#fff" stroke-width="2"/><circle cx="16" cy="16" r="4.5" stroke="#fff" stroke-width="2"/><circle cx="22" cy="10" r="1.3" fill="#fff"/></svg><span>{instagram_labels[lang]}</span></a>'''
+  page = page.replace('</head>', social_css + '</head>')
+  assert page.count('</section>') == 1
+  page = page.replace('</section>', social_link + '\n    </section>')
   (out/lang).mkdir(exist_ok=True);(out/lang/'index.html').write_text(page)
  (out/'index.html').write_text((out/'fr/index.html').read_text())
  # No translated legal document may accidentally be included in this deployment.
