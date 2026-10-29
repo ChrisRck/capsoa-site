@@ -33,7 +33,7 @@ def build_waiting():
   nav+=''.join(f'<a href="/{l}/" lang="{l}" hreflang="{l}" data-language="{l}"'+(' aria-current="page"' if l==lang else '')+f' aria-label="{label}" title="{label}"><span aria-hidden="true">{flags[l]}</span></a>' for l,label in LANGS.items())+'</nav>'
   page=page.replace('<body>','<body>'+nav)
   page=page.replace('</head>','<link rel="stylesheet" href="/assets/language.css?v=20261025-transparent"><script defer src="/assets/language.js"></script></head>')
-  instagram_labels = {'fr': 'Suivez CAPSOA sur Instagram', 'en': 'Follow CAPSOA on Instagram', 'es': 'Sigue a CAPSOA en Instagram', 'pt': 'Siga a CAPSOA no Instagram'}
+  instagram_labels = {'fr': 'Suivez CAPSOA sur Instagram', 'en': 'Follow CAPSOA on Instagram', 'es': 'Siguenos en Instagram', 'pt': 'Siga a CAPSOA no Instagram'}
   social_css = """<style>
     .instagram-link { display:inline-flex; align-items:center; justify-content:center; gap:10px; max-width:100%; margin-top:22px; padding:12px 16px; min-height:48px; color:#fff; background:rgba(20,13,29,.88); border:1px solid rgba(255,255,255,.45); border-radius:14px; font-size:1rem; line-height:1.5; text-decoration:underline; text-underline-offset:4px; }
     .instagram-link svg { width:28px; height:28px; flex-shrink:0; }
@@ -51,5 +51,7 @@ def build_waiting():
   assert sorted(p.name for p in (out/lang).iterdir())==['index.html'], 'Unexpected future document in waiting build'
  for f in backup.glob('*.html'):
   if f.name!='index.html':assert (out/f.name).read_bytes()==f.read_bytes()
- print('Four waiting pages built; existing legal files unchanged; future site excluded.')
+ for f in (ROOT/'src/live-legal').glob('*.html'):
+  shutil.copyfile(f,out/f.name)
+ print('Four waiting pages built; approved live legal overrides applied; future site excluded.')
 if __name__=='__main__':build_waiting()
