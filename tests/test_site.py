@@ -29,6 +29,12 @@ class SiteTest(unittest.TestCase):
      original=Inspect((build.ROOT/'src/fr'/name).read_text())
      for element in ['h1','h2','p','li','section']:
       self.assertEqual(sum(t==element for t,a in p.tags),sum(t==element for t,a in original.tags))
+ def test_legal_documents_noindex_and_homepage_exempt(self):
+  for lang in build.LANGS:
+   for name in build.SOURCE:
+    page=Inspect((build.ROOT/'public'/lang/name).read_text())
+    directives=[a.get('content') for t,a in page.tags if t=='meta' and a.get('name')=='robots']
+    self.assertEqual(directives, [] if name=='index.html' else ['noindex, follow'])
  def test_numeric_terms_preserved(self):
   def numbers(s):return sorted(re.findall(r'\d+(?:[.,]\d+)?',s.replace('0,59','0.59').replace('1,99','1.99')))
   for lang in ['en','es','pt']:

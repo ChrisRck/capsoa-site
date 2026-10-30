@@ -1,0 +1,182 @@
+[
+  {
+    "path": "/fr/mentions-legales.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/fr/mentions-legales"
+  },
+  {
+    "path": "/fr/cgv.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/fr/cgv"
+  },
+  {
+    "path": "/fr/cgu.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/fr/cgu"
+  },
+  {
+    "path": "/fr/suppression-compte.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/fr/suppression-compte"
+  },
+  {
+    "path": "/fr/conditions-mineurs.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/fr/conditions-mineurs"
+  },
+  {
+    "path": "/fr/politique-confidentialite.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/fr/politique-confidentialite"
+  },
+  {
+    "path": "/en/mentions-legales.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/en/mentions-legales"
+  },
+  {
+    "path": "/en/cgv.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/en/cgv"
+  },
+  {
+    "path": "/en/cgu.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/en/cgu"
+  },
+  {
+    "path": "/en/suppression-compte.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/en/suppression-compte"
+  },
+  {
+    "path": "/en/conditions-mineurs.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/en/conditions-mineurs"
+  },
+  {
+    "path": "/en/politique-confidentialite.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/en/politique-confidentialite"
+  },
+  {
+    "path": "/es/mentions-legales.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/es/mentions-legales"
+  },
+  {
+    "path": "/es/cgv.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/es/cgv"
+  },
+  {
+    "path": "/es/cgu.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/es/cgu"
+  },
+  {
+    "path": "/es/suppression-compte.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/es/suppression-compte"
+  },
+  {
+    "path": "/es/conditions-mineurs.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/es/conditions-mineurs"
+  },
+  {
+    "path": "/es/politique-confidentialite.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/es/politique-confidentialite"
+  },
+  {
+    "path": "/pt/mentions-legales.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/pt/mentions-legales"
+  },
+  {
+    "path": "/pt/cgv.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/pt/cgv"
+  },
+  {
+    "path": "/pt/cgu.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/pt/cgu"
+  },
+  {
+    "path": "/pt/suppression-compte.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/pt/suppression-compte"
+  },
+  {
+    "path": "/pt/conditions-mineurs.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/pt/conditions-mineurs"
+  },
+  {
+    "path": "/pt/politique-confidentialite.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/pt/politique-confidentialite"
+  },
+  {
+    "path": "/mentions-legales.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/mentions-legales"
+  },
+  {
+    "path": "/cgv.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/cgv"
+  },
+  {
+    "path": "/cgu.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/cgu"
+  },
+  {
+    "path": "/suppression-compte.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/suppression-compte"
+  },
+  {
+    "path": "/conditions-mineurs.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/conditions-mineurs"
+  },
+  {
+    "path": "/politique-confidentialite.html",
+    "status": 200,
+    "robots": "noindex, follow",
+    "url": "https://capsoa.fr/politique-confidentialite"
+  }
+]

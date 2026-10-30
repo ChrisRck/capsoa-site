@@ -94,6 +94,8 @@ def build():
    if name=='cgu.html':
     word={'fr':'ici','en':'here','es':'aquí','pt':'aqui'}[lang]
     page=page.replace('['+word+']',f'<a href="/{lang}/conditions-mineurs">{word}</a>')
+   if name != 'index.html':
+    page=page.replace('</head>', '<meta name="robots" content="noindex, follow"></head>')
    (out/lang/name).write_text(page)
  # Legacy URLs remain usable without JS, defaulting to French. JS honours explicit
  # ?lang=, saved preference and browser language on these unprefixed pages only.

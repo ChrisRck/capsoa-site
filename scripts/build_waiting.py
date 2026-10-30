@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Publish only waiting pages; preserve the pre-existing legacy legal files."""
+"""Publish waiting homepages and approved, non-indexed legal documents."""
 from pathlib import Path
 import shutil
-from build import ROOT, LANGS, LABELS
+from build import ROOT, LANGS, LABELS, SOURCE, build
 WORDS={
  'fr':('L’application arrive bientôt','Bientôt disponible',"Disponibilité de l'application"),
  'en':('The app is coming soon','Coming soon','App availability'),
@@ -46,12 +46,14 @@ def build_waiting():
   page = page.replace('</section>', social_link + '\n    </section>')
   (out/lang).mkdir(exist_ok=True);(out/lang/'index.html').write_text(page)
  (out/'index.html').write_text((out/'fr/index.html').read_text())
- # No translated legal document may accidentally be included in this deployment.
+ # Build the approved documents, keeping every waiting homepage unchanged.
+ build()
  for lang in LANGS:
-  assert sorted(p.name for p in (out/lang).iterdir())==['index.html'], 'Unexpected future document in waiting build'
- for f in backup.glob('*.html'):
-  if f.name!='index.html':assert (out/f.name).read_bytes()==f.read_bytes()
- for f in (ROOT/'src/live-legal').glob('*.html'):
-  shutil.copyfile(f,out/f.name)
- print('Four waiting pages built; approved live legal overrides applied; future site excluded.')
+  for name in SOURCE:
+   if name != 'index.html':
+    shutil.copyfile(ROOT/'public'/lang/name,out/lang/name)
+ for name in SOURCE:
+  if name != 'index.html':
+   shutil.copyfile(ROOT/'public'/name,out/name)
+ print('Waiting homepages preserved; approved legal documents published with noindex in four languages.')
 if __name__=='__main__':build_waiting()

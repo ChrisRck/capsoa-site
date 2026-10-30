@@ -27,15 +27,19 @@ The contact button opens `https://capsoa.web.app/contact?lang=xx`. The matching 
 
 ## Release status
 
-**Future site: preview only as of 24 October 2026.** The user confirmed keeping the waiting page. Its FR/EN/ES/PT variants are deployed separately using `firebase.waiting.json`; the full legal website stays on the preview channel. The app integration is saved and built but not released to the live web app or a native build in this change. Deploy the translated website documents before enabling the app build flag `CAPSOA_LOCALIZED_LEGAL_PAGES=true`. Ordinary builds keep the existing legal URLs. Do not deploy `firebase.json` to live until the full launch is requested.
-
-See `docs/review-2026-10-24.md` for unresolved inconsistencies already present in the French legal source before launch. Do not treat the translation as validation of those statements.
-
-## Waiting page (current live scope)
+As of 30 October 2026, the full homepage remains preview-only. Production uses
+`firebase.waiting.json`: the unchanged FR/EN/ES/PT waiting homepages plus the six
+approved legal documents in all four languages and their French root aliases.
+The homepages do not link to these documents yet. Legal documents are public by
+direct URL and carry both a robots meta tag and an X-Robots-Tag with
+`noindex, follow`. Crawling must remain allowed so search engines can read this
+instruction. This is not an access restriction.
 
 ```sh
 python3 scripts/build_waiting.py
 firebase deploy --only hosting --config firebase.waiting.json --project capsoa
 ```
 
-The waiting build uses the live snapshot from 24 October, translated into four homepage variants. Previously existing root legal files are retained byte for byte; no new translated legal documents are exposed by this deployment. The complete future website stays in `public/` and on the separate preview channel. Original live release before the waiting translation: `sites/capsoa-vitrine/versions/de08e10297559029`.
+The full-site build also retains noindex on legal documents for launch. The
+production homepage content was compared byte-for-byte before this deployment;
+hashes are recorded in `docs/waiting-homepage-hashes-2026-10-30.json`.
