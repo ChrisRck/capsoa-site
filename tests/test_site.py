@@ -50,7 +50,7 @@ class SiteTest(unittest.TestCase):
    q=parse_qs(urlsplit(links[0]).query)
    self.assertEqual(q['body'],[build.BODIES[lang]])
  def test_visible_text_not_silently_left_in_french(self):
-  allowed={'App Store','Google Play','©2026 CAPSOA','5 Allée des Demoiselles','77230 Saint-Mard, France','SIRET : 13034465800013','2 - Contact','contact@capsoa.fr','Google Cloud','CAPSOA','CAPSOA ·','www.cnil.fr'}
+  allowed={'App Store','Google Play','©2026 CAPSOA','5 Allée des Demoiselles','77230 Saint-Mard, France','SIRET : 13034465800013','2 - Contact','contact@capsoa.fr','Google Cloud','CAPSOA','CAPSOA ·','www.cnil.fr','https://www.cm2c.net/declarer-un-litige.php','litiges@cm2c.net'}
   for lang in ['en','es','pt']:
    translated=json.loads((build.ROOT/'translations'/f'{lang}.json').read_text())
    for name,strings in build.SOURCE.items():
